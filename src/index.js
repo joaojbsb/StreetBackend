@@ -14,6 +14,6 @@ server.use('/lutador', lutadoresRoutes);
 
 
 //escutar na porta 3001 e executar a função
-server.listen(3001, () =>{
+server.listen(process.env.PORT || 3001, () =>{
     console.log('Servidor Online');
 })
